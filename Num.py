@@ -1,19 +1,13 @@
-# basics of numpy
 import numpy as np
-a=np.array([1,2,3])
-b=np.array([[1,2,3],[4,1,6]],dtype='int16')
-print(b)
-print(a)
-#seeing the dimension
-print(a.ndim)
-print(b.ndim)
-#seeing the size..will give the number of element
-print(a.size)
-print(b.size)
-#shape of the arrap(3*2 or something)
-print(a.shape)
-print(b.shape)
-#data type of an array
-print(a.dtype)
-print(b.dtype)
-#
+#task1
+a=np.ones((5,5))
+a[1:4:1,1:4:1]=0
+a[2,2]=9
+b=np.identity(3)
+c=np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20],[21,22,23,24,25],[26,27,28,29,30]])
+d=c[2:4,0:2].copy()
+#printing random number using numpy
+e=[x for x in range(0,101,2)]
+print(e)
+
+print(d)
